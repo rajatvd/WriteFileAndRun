@@ -6,8 +6,14 @@ class WriteFileRun(Magics):
 	
 	@cell_magic
 	def writefile_run(self, line, cell):
-		"""
+		"""Write the contents of a cell to a file, and run the cell.
 		
+		Usage:
+		%%writefile_run <filename> <options>
+
+		Options:
+		-a  Append the contents of the cell to an existing file
+		-dr Don't run the cell
 		"""
 
 		args = line.strip().split(" ")
