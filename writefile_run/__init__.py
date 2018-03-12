@@ -6,6 +6,9 @@ class WriteFileRun(Magics):
 	
 	@cell_magic
 	def writefile_run(self, line, cell):
+		"""
+		
+		"""
 
 		args = line.strip().split(" ")
 		args = [a for a in args if len(a)>0]
@@ -19,14 +22,16 @@ class WriteFileRun(Magics):
 		append = '-a' in args
 		run = '-dr' not in args
 
+		
+		mode = 'a' if append else 'w'
+
+		with open(filename, mode) as f:
+			f.write(cell)
 
 
 		print("Filename: "+str(filename))
 		print("Append: "+str(append))
 		print("Run: "+str(run))
-
-		print("The line is\n"+str(line))
-		print("The cell is\n"+str(cell))
 		
 
 try:
