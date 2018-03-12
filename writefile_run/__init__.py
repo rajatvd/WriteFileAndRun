@@ -27,7 +27,9 @@ class WriteFileRun(Magics):
 
 		with open(filename, mode) as f:
 			f.write(cell)
-
+		
+		if run:
+			self.shell.run_cell(cell)
 
 		print("Filename: "+str(filename))
 		print("Append: "+str(append))
