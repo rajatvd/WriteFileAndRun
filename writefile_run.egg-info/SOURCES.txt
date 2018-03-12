@@ -4,4 +4,5 @@ writefile_run.egg-info/PKG-INFO
 writefile_run.egg-info/SOURCES.txt
 writefile_run.egg-info/dependency_links.txt
 writefile_run.egg-info/not-zip-safe
+writefile_run.egg-info/requires.txt
 writefile_run.egg-info/top_level.txt

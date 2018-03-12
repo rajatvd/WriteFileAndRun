@@ -1,11 +1,10 @@
 Metadata-Version: 1.0
 Name: writefile-run
-Version: 0.1
-Summary: IPython cell magic to run a cell after writing to a file
-Home-page: UNKNOWN
-Author: Rajat V D
+Version: 0.2
+Summary: IPython cell magic to write a cell to a file and run it
+Home-page: https://github.com/rajatvd/WriteFileAndRun
+Author: Rajat Vadiraj Dwaraknath
 Author-email: rajatvd@gmail.com
 License: MIT
-Description-Content-Type: UNKNOWN
 Description: UNKNOWN
 Platform: UNKNOWN

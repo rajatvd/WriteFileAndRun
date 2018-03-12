@@ -37,10 +37,6 @@ class WriteFileRun(Magics):
 		if run:
 			self.shell.run_cell(cell)
 
-		print("Filename: "+str(filename))
-		print("Append: "+str(append))
-		print("Run: "+str(run))
-		
 
 try:
 	ip = get_ipython()
